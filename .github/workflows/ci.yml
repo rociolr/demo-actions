@@ -2,9 +2,9 @@ name: Python CI
 
 on:
   push:
-    branches: [ main ] #cambia main si tu rama principal tiene otro nombre
+    branches: [ master ] #cambia main si tu rama principal tiene otro nombre
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   build:     #creo una mauqina virtuaL DE UBUNTU
     runs-on: ubuntu-latest    
