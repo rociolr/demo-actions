@@ -2,9 +2,9 @@ name: python CI
 
 on:
   push:
-    branches: [main] #cambia main si tu rama principal tiene otro nombre
+    branches: [ main ] #cambia main si tu rama principal tiene otro nombre
   pull_request:
-    branches: [main]
+    branches: [ main ]
 jobs:
   build:     #creo una mauqina virtuaL DE UBUNTU
     runs-on: ubuntu-latest    
@@ -18,4 +18,4 @@ jobs:
         python-version: 3.8
     - name: Run tests
       run: |
-       python -m unittest test_suma.py
+        python -m unittest test_suma.py
